@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* 블럭 주석처리가 가능하다. CSS와 동일*/
+.box {
+  width: 200px;
+  height: 50%;
+  background-color: blue; }
+
+.box1 {
+  width: 400px;
+  height: 200%;
+  background-color: blue; }
+
+.menu {
+  background-color: yellowgreen; }
+.menu .list {
+  text-align: center;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  padding: 0; }
+.menu .list li {
+  list-style: none;
+  float: left; }
+.menu .list li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 20px;
+  display: block;
+  font-size: 12px;
+  font-weight: bold; }
+.menu .list li a:hover {
+  background-color: red;
+  color: white;
+  transition: .6s all; }
+.menu .list::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.menu .list .sub {
+  position: absolute;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  visibility: hidden;
+  display: none;
+  opacity: 0;
+  transition: .4s all ease;
+  transform: transalteX(20px); }
+.menu .list .sub li {
+  float: none; }
+
+.menu .list li:hover .sub {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0px); }
+
+.nemo, .nemo2 {
+  width: 200px;
+  height: 200px;
+  background-color: green; }
+
+.nemo2 {
+  /*width: 200px;
+  height: 200px;
+  background-color: green;*/
+  border-radius: 50%; }
+
+.open {
+  color: red;
+  font-size: 20px; }
+
+.close {
+  color: blue;
+  font-size: 40px; }
+
+.open {
+  width: 700px;
+  height: 200px;
+  background-color: gray; }
+
+/*# sourceMappingURL=convert.css.map */
